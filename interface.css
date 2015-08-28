@@ -1,10 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster|Cabin);
 
-h1 { font-family: "Lobster", cursive; }
+h1 { font-family: "Lobster", cursive; margin-top: 0; }
 html, body { font-family: "Cabin", sans-serif; }
 
 .container {
-    border: 5px solid black;
+    border: 5px solid black; border-top: none;
     padding: 15px;
 }
 .poll-entry {
@@ -14,6 +14,15 @@ html, body { font-family: "Cabin", sans-serif; }
     padding: 2px 0;
     border-bottom: 1px solid lightgrey;
 }
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+a:hover .poll-entry{
+    background-color: lightgrey;
+}
+
 .poll-title {
     width: 25%;
     text-align: center;
