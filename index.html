@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="PollApp">
     <head>
         <title>PollApp</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" />
@@ -7,10 +7,10 @@
     </head>
     <body>
         <h1>Title here</h1>
-        <div id="poll-preview-wrapper">
-            
+        <div id="poll-preview-wrapper" ng-controller="PreviewController as PrevC">
+            <p ng-repeat="poll in PrevC.polls">{{poll.name}}</p>
         </div>
-        <div id="button-lane">
+        <div class="btn-group">
             <button class="btn btn-success">
                 My Polls
             </button>
