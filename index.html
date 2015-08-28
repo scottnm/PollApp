@@ -15,7 +15,7 @@
                 <div class="poll-entry" ng-repeat="poll in PrevC.polls">
                     <div class="poll-title">{{poll.name}}</div>
                     <div class="answer-bar">
-                        <div ng-repeat="answer in poll.answers" ng-style="{'width': PrevC.votePercentage(poll, answer)+'%'}" style="border:1px solid black">{{answer.choice}}: {{PrevC.votePercentage(poll, answer)}}%</div>
+                        <div ng-repeat="answer in poll.answers" ng-style="{'width': PrevC.votePercentage(poll, answer)+'%'}">{{answer.choice}}: {{PrevC.votePercentage(poll, answer)}}%</div>
                     </div>
                 </div>
             </div>
@@ -34,6 +34,7 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="polls.js"></script>
         <script type="text/javascript" src="app.js"></script>
     </body>
 </html>

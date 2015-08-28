@@ -1,11 +1,12 @@
 var polls = [
     {
         name: "Best Flavor of Ice Cream?",
-        votes: 12,
+        votes: 15,
         answers: [
             { choice: "Vanilla", votes: 3},
             { choice: "Chocolate", votes: 4},
-            { choice: "Strawberry", votes: 5}
+            { choice: "Strawberry", votes: 5},
+            { choice: "Rocky Road", votes: 3 }
         ]
     },
     {
@@ -50,6 +51,17 @@ var polls = [
             {choice: "Jojo's Bizarre Adventure", votes: 999},
             {choice: "The Walking Dead", votes: 304},
             {choice: "Breaking Bad", votes: 87}
+        ]
+    },
+    {
+        name: "What is the best name?",
+        votes: 100,
+        answers: [
+            { choice: "John", votes: 20 },
+            { choice: "Steve", votes: 20 },
+            { choice: "Bill", votes: 20 },
+            { choice: "Richard", votes: 20 },
+            { choice: "Doc", votes: 20 }
         ]
     }
 ];
