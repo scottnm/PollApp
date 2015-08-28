@@ -7,7 +7,6 @@ html, body { font-family: "Cabin", sans-serif; }
     border: 5px solid black;
     padding: 15px;
 }
-
 .poll-entry {
     width: 100%;
     display: flex;
@@ -15,11 +14,12 @@ html, body { font-family: "Cabin", sans-serif; }
     padding: 2px 0;
     border-bottom: 1px solid lightgrey;
 }
-
 .poll-title {
     width: 25%;
     text-align: center;
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .answer-bar {
