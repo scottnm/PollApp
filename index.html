@@ -13,17 +13,16 @@
             
             <div id="poll-preview-wrapper" ng-controller="PreviewController as PrevC">
                 <div ng-repeat="poll in PrevC.polls">
-                    <div class="poll-entry">
-                        <span>{{poll.name}}</span>
-                        <div class="answer-bar">
-                            <span ng-repeat="answer in poll.answers">{{answer.choice}}: {{PrevC.votePercentage(poll, answer)}}%</span>
+                    <div class="poll-entry row">
+                        <div class="col-md-3">{{poll.name}}</div>
+                        <div class="answer-bar col-md-9">
+                            <div ng-repeat="answer in poll.answers" ng-style="{'width': PrevC.votePercentage(poll, answer)+'%'" style="border:1px solid black">{{answer.choice}}: {{PrevC.votePercentage(poll, answer)}}%</div>
                         </div>
-                        <br>
                     </div>
                 </div>
             </div>
             
-            <div class="btn-group">
+            <div class="btn-group text-center">
                 <button class="btn btn-success">
                     My Polls
                 </button>

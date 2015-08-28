@@ -1,2 +1,2 @@
 # PollApp
-Project 2 for r/jstogether
+Project 2 for /r/jstogether
