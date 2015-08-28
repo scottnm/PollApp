@@ -9,7 +9,7 @@ app.controller("PreviewController", function(){
      *                 specific poll
      */
     this.votePercentage = function(poll, choice){
-        return poll.answers[choice]["votes"] / poll["votes"];
+        return (choice["votes"] / poll["votes"] * 100).toFixed(0);
     }
 });
 
@@ -17,11 +17,11 @@ var polls = [
     {
         name: "Best Flavor of Ice Cream?",
         id: 0,
-        votes: 0,
+        votes: 12,
         answers: [
-            { choice: "Vanilla", votes: 0 },
-            { choice: "Chocolate", votes: 0 },
-            { choice: "Strawberry", votes: 0 }
+            { choice: "Vanilla", votes: 3 },
+            { choice: "Chocolate", votes: 4 },
+            { choice: "Strawberry", votes: 5 }
         ]
     },
     {

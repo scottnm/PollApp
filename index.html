@@ -4,19 +4,34 @@
         <title>PollApp</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="interface.css" type="text/css" />
+        <meta charset=utf-8>
     </head>
     <body>
-        <h1>Title here</h1>
-        <div id="poll-preview-wrapper" ng-controller="PreviewController as PrevC">
-            <p ng-repeat="poll in PrevC.polls">{{poll.name}}</p>
-        </div>
-        <div class="btn-group">
-            <button class="btn btn-success">
-                My Polls
-            </button>
-            <button class="btn btn-primary">
-                Answered Polls
-            </button>
+        <div class="container">
+            
+            <h1>Poll App</h1>
+            
+            <div id="poll-preview-wrapper" ng-controller="PreviewController as PrevC">
+                <div ng-repeat="poll in PrevC.polls">
+                    <div class="poll-entry">
+                        <span>{{poll.name}}</span>
+                        <div class="answer-bar">
+                            <span ng-repeat="answer in poll.answers">{{answer.choice}}: {{PrevC.votePercentage(poll, answer)}}%</span>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="btn-group">
+                <button class="btn btn-success">
+                    My Polls
+                </button>
+                <button class="btn btn-primary">
+                    Answered Polls
+                </button>
+            </div>
+            
         </div>
         
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
