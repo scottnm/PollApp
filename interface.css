@@ -31,8 +31,12 @@ a:hover .poll-entry{
     text-overflow: ellipsis;
 }
 
-.answer-bar {
+.poll-entry .answer-bar {
     width: 75%;
+}
+
+.answer-bar {
+    width: 100%;
     display: flex;
     overflow: hidden;
     white-space: nowrap;
@@ -51,3 +55,13 @@ a:hover .poll-entry{
 
 .answer-choice:nth-child(4n + 3),
 .answer-button:nth-child(4n + 3){ background-color: #2F945B; }
+
+.button-bar {
+    display: flex;
+    width: 100%;
+}
+
+.button-bar button{
+    flex: 1;
+    margin: 10px;
+}
