@@ -1,5 +1,5 @@
 <div id="poll-preview-wrapper" ng-controller="PreviewController as PrevC">
-    <a ng-repeat="poll in PrevC.polls" href="#">
+    <a ng-repeat="poll in PrevC.polls" ng-href="/poll/{{poll.id}}">
         <div class="poll-entry">
             <div class="poll-title">{{poll.name}}</div>
             <div class="answer-bar">

@@ -14,11 +14,18 @@ angular.module('PollApp', ['ngRoute'])
             return (choice['votes'] / poll['votes'] * 100).toFixed(0);
         }
     })
+    .controller('PollController', function($scope, $routeParams){
+        $scope.pollParam = $routeParams.pollParam;
+    })
     .config(function($routeProvider, $locationProvider){
         $routeProvider
         .when('/preview', {
             templateUrl: 'preview.html',
             controller: 'PreviewController'
+        })
+        .when('/poll/:pollParam', {
+            templateUrl: 'pollPage.html',
+            controller: 'PollController'
         })
         .otherwise({
             redirectTo: '/preview'

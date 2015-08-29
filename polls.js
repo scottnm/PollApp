@@ -1,5 +1,6 @@
 var polls = [
     {
+        id: 0,
         name: 'Best Flavor of Ice Cream?',
         votes: 15,
         answers: [
@@ -10,6 +11,7 @@ var polls = [
         ]
     },
     {
+        id: 1,
         name: 'What is the best Programming Language?',
         votes: 41,
         answers: [
@@ -19,6 +21,7 @@ var polls = [
         ]
     },
     {
+        id: 2,
         name: 'Who is the best?',
         votes: 1000,
         answers: [
@@ -27,6 +30,7 @@ var polls = [
         ]
     },
     {
+        id: 3,
         name: 'Favorite Vacation Spot?',
         votes: 55,
         answers: [
@@ -36,6 +40,7 @@ var polls = [
         ]
     },
     {
+        id: 4,
         name: 'Easiest Language To Learn?',
         votes: 14,
         answers: [
@@ -45,15 +50,17 @@ var polls = [
         ]
     },
     {
+        id: 5,
         name: 'Best Television Show?',
         votes: 1390,
         answers: [
-            {choice: 'Jojo's Bizarre Adventure', votes: 999},
+            {choice: 'Jojo\'s Bizarre Adventure', votes: 999},
             {choice: 'The Walking Dead', votes: 304},
             {choice: 'Breaking Bad', votes: 87}
         ]
     },
     {
+        id: 6,
         name: 'What is the best name?',
         votes: 100,
         answers: [
