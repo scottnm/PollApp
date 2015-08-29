@@ -65,3 +65,5 @@ var polls = [
         ]
     }
 ];
+
+var activePoll = null;
