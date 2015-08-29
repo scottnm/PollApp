@@ -39,7 +39,15 @@ a:hover .poll-entry{
     color: white;
     border-radius: 5px;
 }
-.answer-bar div:nth-child(4n){ background-color: #D08E42; }
-.answer-bar div:nth-child(4n + 1){ background-color: #2E6783; }
-.answer-bar div:nth-child(4n + 2){ background-color: #D06042; }
-.answer-bar div:nth-child(4n + 3){ background-color: #2F945B; }
+
+.answer-choice:nth-child(4n),
+.answer-button:nth-child(4n){ background-color: #D08E42; }
+
+.answer-choice:nth-child(4n + 1),
+.answer-button:nth-child(4n + 1){ background-color: #2E6783; }
+
+.answer-choice:nth-child(4n + 2),
+.answer-button:nth-child(4n + 2){ background-color: #D06042; }
+
+.answer-choice:nth-child(4n + 3),
+.answer-button:nth-child(4n + 3){ background-color: #2F945B; }

@@ -32,7 +32,7 @@ var polls = [
     {
         id: 3,
         name: 'Favorite Vacation Spot?',
-        votes: 55,
+        votes: 65,
         answers: [
             {choice: 'Mexico', votes: 10},
             {choice: 'Cancun', votes: 30},
@@ -73,4 +73,4 @@ var polls = [
     }
 ];
 
-var activePoll = null;
+var activePollId = -1;

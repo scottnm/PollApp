@@ -1,21 +1,29 @@
 'use strict';
 
+/**
+ * function that determines an answer choice's vote percentage
+ * @param poll - The poll within the list of polls to calculate a percentage
+ *               for
+ * @param choice - The answer choice to calculate a percentage for the
+ *                 specific poll
+ */
+function votePercentage(poll, choice){
+    return (choice['votes'] / poll['votes'] * 100).toFixed(0);
+};
+
+
 angular.module('PollApp', ['ngRoute'])
     .controller('PreviewController', function(){
         this.polls = polls;
-        /**
-         * function that determines an answer choice's vote percentage
-         * @param poll - The poll within the list of polls to calculate a percentage
-         *               for
-         * @param choice - The answer choice to calculate a percentage for the
-         *                 specific poll
-         */
-        this.votePercentage = function(poll, choice){
-            return (choice['votes'] / poll['votes'] * 100).toFixed(0);
-        }
+        this.votePercentage = votePercentage;
+        this.updateActivePoll = function(pollId){
+            activePollId = pollId;
+        };
     })
     .controller('PollController', function($scope, $routeParams){
-        $scope.pollParam = $routeParams.pollParam;
+        debugger;
+        $scope.poll = polls[activePollId];
+        $scope.votePercentage = votePercentage;
     })
     .config(function($routeProvider, $locationProvider){
         $routeProvider
@@ -33,3 +41,4 @@ angular.module('PollApp', ['ngRoute'])
         
         $locationProvider.html5Mode(true);
     });
+    

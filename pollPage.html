@@ -1,3 +1,9 @@
-<div>
-    {{pollParam}}    
+<div id="poll-container" >
+    <h3>{{poll.name}}</h3>
+    <div class="answer-bar">
+        <div class="answer-choice" ng-repeat="answer in poll.answers" ng-style="{'width': votePercentage(poll, answer)+'%'}">{{answer.choice}}: {{votePercentage(poll, answer)}}%</div>
+    </div>
+    <div class="button-bar">
+        <button class="btn answer-button" ng-repeat="answer in poll.answers">{{answer.choice}}</button>
+    </div>
 </div>
