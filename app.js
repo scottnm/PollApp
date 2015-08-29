@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module("PollApp", ['ngRoute'])
-    .controller("PreviewController", function(){
+angular.module('PollApp', ['ngRoute'])
+    .controller('PreviewController', function(){
         this.polls = polls;
         /**
          * function that determines an answer choice's vote percentage
@@ -11,7 +11,7 @@ angular.module("PollApp", ['ngRoute'])
          *                 specific poll
          */
         this.votePercentage = function(poll, choice){
-            return (choice["votes"] / poll["votes"] * 100).toFixed(0);
+            return (choice['votes'] / poll['votes'] * 100).toFixed(0);
         }
     })
     .config(function($routeProvider, $locationProvider){
