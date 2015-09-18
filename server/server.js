@@ -1,13 +1,23 @@
 // on startup read polls from storage and access them as JSON
-var fs = require('fs');
-var path = process.argv[2];
-var pollsString = fs.readFileSync(path, 'utf8');
+var NodeFS = require('fs');
+var NodePath = require('path');
+var pollDirPath = process.argv[2];
+var pollFiles = NodeFS.readdirSync(pollDirPath);
+var fileContents = [];
+pollFiles.forEach(function(file){
+  var fileContent = NodeFS.readFileSync(NodePath.join(pollDirPath, file), 'utf8');
+  console.log(NodePath.join(pollDirPath, file), fileContent);
+  fileContents.push(fileContent);
+});
+
+console.log("\n\n\n\n\n ALL CONTENTS", fileContents.join(','));
+var pollsString = '[' + fileContents.join(',') + ']';
 var pollsJSON = JSON.parse(pollsString);
 
 
 // setup server
-var express = require('express');
-var nodeApp = express();
+var NodeExpress = require('express');
+var nodeApp = NodeExpress();
 nodeApp.get('/getpolls', function(request, result) {
 	// set the response so get requests in chrome function properly
 	result.set({

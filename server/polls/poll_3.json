@@ -1,0 +1,8 @@
+{
+	"name": "Who is the best?",
+	"votes": 1000,
+	"answers": [
+		{ "choice": "Xavier", "votes": 750 },
+		{ "choice": "Scott", "votes": 250 }
+	]
+}

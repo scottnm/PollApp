@@ -1,0 +1,9 @@
+{
+	"name": "Easiest Language To Learn?",
+	"votes": 14,
+	"answers": [
+		{"choice": "Japanese", "votes": 5},
+		{"choice": "English", "votes": 5},
+		{"choice": "Spanish", "votes": 4}
+	]
+}

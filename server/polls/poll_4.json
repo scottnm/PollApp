@@ -1,0 +1,9 @@
+{
+	"name": "Favorite Vacation Spot?",
+	"votes": 55,
+	"answers": [
+		{"choice": "Mexico", "votes": 10},
+		{"choice": "Cancun", "votes": 30},
+		{"choice": "Japan", "votes": 25}
+	]
+}

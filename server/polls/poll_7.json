@@ -1,0 +1,11 @@
+{
+	"name": "What is the best name?",
+	"votes": 100,
+	"answers": [
+		{ "choice": "John", "votes": 20 },
+		{ "choice": "Steve", "votes": 20 },
+		{ "choice": "Bill", "votes": 20 },
+		{ "choice": "Richard", "votes": 20 },
+		{ "choice": "Doc", "votes": 20 }
+	]
+}

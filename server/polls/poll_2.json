@@ -1,0 +1,9 @@
+{
+	"name": "What is the best Programming Language?",
+	"votes": 41,
+	"answers": [
+		{ "choice": "Python", "votes": 18 },
+		{ "choice": "JavaScript", "votes": 23 },
+		{ "choice": "Java", "votes": 0 }
+	]
+}

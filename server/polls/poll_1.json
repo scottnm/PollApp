@@ -1,0 +1,10 @@
+{
+	"name": "Best Flavor of Ice Cream?",
+	"votes": 15,
+	"answers": [
+		{ "choice": "Vanilla", "votes": 3},
+		{ "choice": "Chocolate", "votes": 4},
+		{ "choice": "Strawberry", "votes": 5},
+		{ "choice": "Rocky Road", "votes": 3 }
+	]
+}

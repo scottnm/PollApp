@@ -1,0 +1,9 @@
+{
+	"name": "Best Television Show?",
+	"votes": 1390,
+	"answers": [
+		{"choice": "Jojo's Bizarre Adventure", "votes": 999},
+		{"choice": "The Walking Dead", "votes": 304},
+		{"choice": "Breaking Bad", "votes": 87}
+	]
+}
