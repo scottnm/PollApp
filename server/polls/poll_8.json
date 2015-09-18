@@ -1,0 +1,10 @@
+{
+	"name": "Who is the best kong?",
+	"votes": 63,
+	"answers": [
+		{ "choice": "Diddy Kong", "votes": 3 },
+		{ "choice": "Tiny Kong", "votes": 5 },
+		{ "choice": "Lanky Kong", "votes": 25 },
+		{ "choice": "Chunky Kong", "votes": 30 }
+	]
+}
