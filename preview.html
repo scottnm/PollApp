@@ -1,0 +1,21 @@
+
+<div id="poll-preview-wrapper" ng-controller="PreviewController">
+    <a ng-repeat="poll in polls" ng-href="/poll/{{poll.id}}" ng-click="updateActivePoll(poll.id)">
+        <div class="poll-entry">
+            <div class="poll-title">{{poll.name}}</div>
+            <div class="answer-bar">
+                <div ng-repeat="answer in poll.answers" ng-style="{'width': votePercentage(poll, answer)+'%'}">{{answer.choice}}: {{votePercentage(poll, answer)}}%</div>
+            </div>
+        </div>
+    </a>
+</div>
+
+<div class="btn-group text-center">
+    <button class="btn btn-success">
+        My Polls
+    </button>
+    <button class="btn btn-primary">
+        Answered Polls
+    </button>
+</div>
+            
